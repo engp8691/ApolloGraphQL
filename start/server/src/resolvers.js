@@ -51,7 +51,7 @@ module.exports = {
         launches,
       };
     },
-    
+
     cancelTrip: async (_, { launchId }, { dataSources }) => {
       const result = await dataSources.userAPI.cancelTrip({ launchId });
 
@@ -70,3 +70,10 @@ module.exports = {
     },
   },
 };
+
+
+
+// D:\playground\ApolloGraphQL\start\server>npx apollo service:push  --graph=Space-x-management --key=user:gh.engp8691:NZnGfblZtD-8AKLjgKJ5Tg --endpoint=http://localhost:4000
+//                                          npx apollo service:push  --endpoint=http://localhost:4000 --graph=Space-x-management
+// D:\playground\ApolloGraphQL\start\server>npx apollo service:check --endpoint=http://localhost:4000 --graph=Space-x-management
+
